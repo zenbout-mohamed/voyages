@@ -33,5 +33,35 @@ nav a:hover{
 }
 
 nav ul li:hover> ul {
+    /* Pour le sous-menu en survolant */
     display:block;
 }
+
+
+footer {
+    text-align:center;
+    padding:1rem;
+    font-size:0.9rem;
+    background-color:#2A2A3D;
+    color:#E0E0E0;
+}
+
+
+a, button {
+    transition:all 0.3s ease-in-out;
+}
+
+a:hover{
+    transform:translateY(-2px) ;
+    background-color:#00B4D8;
+    color:#1E1E2F;
+}
+
+.card {
+    background-color:#292940;
+    border-radius:0.5rem;
+    padding:1rem;
+    box-shadow:0 4px 6px rgba(0,0,0,0.3);
+}
+
+
