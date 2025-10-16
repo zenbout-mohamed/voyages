@@ -1,0 +1,37 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    font-family:'Helvetica neue', Arial, sans-serif;
+    color:#E0E0E0;
+    background-color:#1E1E2F;
+}
+
+h1 , h2, h3 ,h4, h5, h6{
+   font-weight:600;
+}
+
+
+nav{
+    padding:2rem 1rem;
+    background-color:#2A2A3D;
+}
+
+nav a {
+    background-color:#E0E0E0;
+    text-decoration:none;
+    transition:color 0.3s;
+}
+
+nav a:hover{
+    color:#00B4D8;
+}
+
+nav ul li:hover> ul {
+    display:block;
+}
