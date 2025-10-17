@@ -10,6 +10,8 @@ const toggleP = (btnId , menuId)  => {
     document.addEvenListener(
         'click', ()=> menu.classList.add('hidden')
     );
-    toggleP('continentBtnP','continentMenuP');
-    toggleP('personBtnP','personMenuP');
+    
 };
+
+toggleP('continentBtnP','continentMenuP');
+toggleP('personBtnP','personMenuP');
