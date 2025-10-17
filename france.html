@@ -9,14 +9,25 @@
     <link rel="stylesheet" href="./css/france.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
-    <header class="bg-gray-800 shadow">
-        <nav class="container mx-auto flex justify-between items-center p-4">
-            <a href="index.html" class="text-2xl font-bold text-white">Découverte du Monde !</a>
-            <ul class="flex space-x-4">
-                <li class="relative group"><a href="#" class="hover:text-blue-400">Par Continent</a>
-                    <ul class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
+    <header class="bg-[#0b1220] border-b border-gray-800">
+        <section class ="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class ="flex items-center gap-3">
+                <div class ="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justifu-center shadow">
+                    <span class ="font-semibold ">D</span>
+                </div>
+                <div>
+                    <p class ="font-bold text-lg">Découverte du Monde </p>
+                    <p class ="text-xs text-gray-400">Mohamed - France </p>
+                </div>
+            </a>
+            <nav class="relative">
+            <ul class="flex gap-4 items-center">
+                <li class="relative">
+                    <button id ="continentBtnF"href="#" class="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center">Continents</button>
+                    <svg class ="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke linecap="round" stroke-linejoint="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    <!-- <ul class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
                         <li><a href="france.html" class="block px-4 py-2 hover:bg-gray-600">Europe</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
 
                 <li class="relative group">
@@ -27,6 +38,11 @@
                 </li>
             </ul>
         </nav>
+
+
+
+        </section>
+        
     </header>
     <main class ="container mx-auto p-6">
         <h1 class ="text-4xl font-bold mb-4 ">La France</h1>
