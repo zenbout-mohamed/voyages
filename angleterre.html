@@ -30,16 +30,58 @@
     </header>   
     <section class ="w-full bg-[url('https://images.unsplash.com/photo-1505739771344-cc0d0e1f845f?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=')] rounded bg-cover bg-center h-64 flex items-center">
         <div class ="container mx-auto px-4">
-            <h2 class ="text-3xl"></h1>
-
+            <h2 class ="text-3xl font-blod text-white drop-shadow">Angleterre - Janitou</h2>
+            <p class ="text-gray-200">Histoire , musique et rue vibrante</p>
         </div>
-        
     </section>
-    <main class ="">
-
+    <main class ="container mx-auto px-4 py-10">
+        <section class ="grid md:grid-cols-2 gap-6">
+            <div class ="bg-[#071022] rounded-lg p-6 shadow-lg">
+                <p class ="font-semibold mb-3">Top lieux à Londre</p>
+                <ol class ="list-decimal list-inside text-gray-300 space-y-2">
+                    <li>British Museum</li>
+                    <li>Tower of London</li>
+                    <li>Camden Market</li>
+                    <li>Soho - cafés et musique</li>
+                </ol>
+                <p class ="mt-4 text-gray-400">Conseil : Achetez une Oyster Card pour les moyens de transports.</p>
+            </div>
+            <section class ="grid grid-cols-1 gap-4">
+                <article class ="p-4 rounded-lg bg-[#06121a]">
+                    <p class ="font-semibold">Musées (Gratuit)</p>
+                    <p class ="text-sm text-gray-300">Beaucoup de musées nationaux sont gratuit et valent le détour.</p>
+                </article>
+                <article class ="p-4 rounded-lg bg-[#06121a]">
+                    <p class ="font-semibold">NightLife</p>
+                    <p class ="text-sm text-gray-300">Soho et Shoreditch pour la vie nocturne.</p>
+                </article>
+            </section>
+        </section>
+        <section class ="mt-8 p-6 rounded bg-[#06121a]">
+            <p class ="font-semibold mp-4">Mini Itinéraire (3 Jours)</p>
+            <div class ="flex gap-4">
+                <article class ="flex-1 p-3 bg-[#071522] rounded">
+                    <p class ="font-semibold text-sm text-gray-300">Jour 1 : Musées et Balade</p>
+                    <p class ="font-semibold text-sm text-gray-300">Jour 2 : Tour & Marchés</p>
+                    <p class ="font-semibold text-sm text-gray-300">Jour 3 : Quartiers Alternatifs</p>
+                </article>
+            </div>
+            <form class ="mt-6 grid md:grid-cols-2 gap-3" method ="post" action="" onsubmit="even.preventDefault(); alert('Réservation simulée');">
+                <input type="text" class ="p-3 rounded bg-[#0b1220] border border-gray-800" placeholder ="Nom : ">
+                <input type="email" class ="p-3 rounded bg-[#0b1220] border border-gray-800" placeholder ="Email : ">
+                <select name="" id="" class ="p-3 rounded bg-[#0b1220] border border-gray-800">
+                    <option>Choisir un package</option>
+                    <option>Classique</option>
+                    <option>Budget</option>
+                </select>
+                <button type ="submit" class ="px-4 py-2 bg-gray-700 rounded hover:bg-gray-600">Réserver</button>
+            </form>
+        </section>
     </main>
-    <footer class ="bg-gray-800 mt-7 p-4 text-center">
+    <footer class ="border-t border-gray-800 mt-12 text-sm text-gray-500 p-4 text-center">
         <p>&copy; 2025-decouverte du Monde</p>
     </footer>
+
+    <script src ="./js/angleterre.js"></script>
 </body>
 </html>
