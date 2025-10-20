@@ -28,9 +28,30 @@
         <nav class ="relative">
             <ul class ="flex gap-4 flex-items">
                 <li class ="relative">
-                    <button id ="continentBtn" class ="px-3 py-2 rounded-md">
-
+                    <button id ="continentBtn" class ="px-3 py-2 rounded-md flex items-center gap-2 hover:bg-gray-600">
+                        Continents
+                        <svg class ="w-4 h-4" fill ="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoint="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
+                    <div id ="continentMenu" class ="absolute right-0 mt-2 -44 bg-[#071022] border border-gray-800 runded shadow-lg hidden">
+                        <a href="#" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Asie</a>
+                        <a href="#" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Amérique</a>
+                        <div class ="border-t boorder-gray-800"></div>
+                        <a href="france.html" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Europe -> France</a>
+                        <a href="angleterre.html" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Europe -> Angleterre</a>
+                        <a href="portugal.html" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Europe -> Portugal</a>
+                    </div>
+                </li>
+                <li class ="relative">
+                    <button id ="personBtn" class ="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center gap-2">
+                        Personnes
+                        <svg class ="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id ="personMenu" class ="absolute right-0 mt-2 w-44 bg-[#071022] border border-gray-800 rounded shadow-lg">
+                        <a href="france.html" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Europe -> France</a>
+                        <a href="angleterre.html" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Europe -> Angleterre</a>
+                        <a href="portugal.html" class ="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Europe -> Portugal</a>
+                    </div>
+
                 </li>
             </ul>
 
