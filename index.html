@@ -8,30 +8,74 @@
   <link rel="stylesheet" href="./css/voyages.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
-  <!-- Header -->
-  <header class="bg-gray-800 shadow">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="text-2xl font-bold text-teal-400">Découverte du Monde</a>
-      <ul class="flex space-x-6">
-        <!-- Menu Par Continent -->
-        <li class="relative group">
-          <a href="#" class="hover:text-teal-400">Par Continent</a>
-          <ul class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
-            <li><a href="france.html" class="block px-4 py-2 hover:bg-gray-600">Europe</a></li>
-          </ul>
-        </li>
-
-        <li class="relative group">
-          <a href="#" class="hover:text-teal-400">Par Personne</a>
-          <ul class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
-            <li><a href="france.html" class="block px-4 py-2 hover:bg-gray-600">Mohamed</a></li>
-            <li><a href="angleterre.html" class="block px-4 py-2 hover:bg-gray-600">Janitou</a></li>
-            <li><a href="portugal.html" class="block px-4 py-2 hover:bg-gray-600">Claire</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+   <header class="relative overflow-hidden border-b border-gray-800 shadow-lg">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-teal-800 via-teal-500 to-teal-800 opacity-20 animate-gradient">
+        </div>
+        <div class="relative container mx-auto flex items-center justify-between px-6 py-4 bg-[#0b0f14]/95 backdrop-blur-sm">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center shadow-md">
+                    <span class="font-bold text-white text-lg">D</span>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-lg text-white">Découverte du Monde</h1>
+                    <p class="text-xs text-teal-400 tracking-wide">Voyage · Culture · Inspiration</p>
+                </div>
+            </a>
+            <nav>
+                <ul class="flex gap-8 items-center text-teal-400 font-medium">
+                    <!-- Menu Continent -->
+                    <li class="relative group">
+                        <button class="flex items-center gap-2 hover:text-teal-300 transition duration-200">
+                            Continents
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-44 bg-gray-900 border border-gray-700 rounded-xl shadow-xl hidden group-hover:block">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Asie</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Amérique</a>
+                            <div class="border-t border-gray-700"></div>
+                            <a href="france.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Europe
+                                → France</a>
+                            <a href="angleterre.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Europe
+                                → Angleterre</a>
+                            <a href="portugal.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Europe
+                                → Portugal</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button class="flex items-center gap-2 hover:text-teal-300 transition duration-200">
+                            Personnes
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-44 bg-gray-900 border border-gray-700 rounded-xl shadow-xl hidden group-hover:block">
+                            <a href="france.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Mohamed
+                                → France</a>
+                            <a href="angleterre.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Janitou
+                                → Angleterre</a>
+                            <a href="portugal.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Claire
+                                → Portugal</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
   <section class="h-96 flex items-center justify-center bg-cover bg-center" style="background-image: url('./images/monde.jpg');">
     <h2 class="text-4xl font-bold bg-black bg-opacity-50 text-white p-4 rounded">

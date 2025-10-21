@@ -1,131 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Découverte du Monde - Portugal</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./css/voyages.css">
-  <link rel="stylesheet" href="./css/portugal.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Découverte du Monde - Portugal</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/voyages.css">
+    <link rel="stylesheet" href="./css/portugal.css">
 </head>
 
 <body class="bg-gray-900 text-gray-100 font-sans">
-  <header class="bg-[#0b1220] border-b border-gray-800">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center shadow">
-          <span class="font-semibold">D</span>
+    <header class="relative overflow-hidden border-b border-gray-800 shadow-lg">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-teal-800 via-teal-500 to-teal-800 opacity-20 animate-gradient">
         </div>
-        <div>
-          <p class="font-bold text-lg">Découverte du Monde</p>
-          <p class="text-xs text-gray-400">Claire — Portugal</p>
+        <div
+            class="relative container mx-auto flex items-center justify-between px-6 py-4 bg-[#0b0f14]/95 backdrop-blur-sm">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center shadow-md">
+                    <span class="font-bold text-white text-lg">D</span>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-lg text-white">Découverte du Monde</h1>
+                    <p class="text-xs text-teal-400 tracking-wide">Voyage · Culture · Inspiration</p>
+                </div>
+            </a>
+            <nav>
+                <ul class="flex gap-8 items-center text-teal-400 font-medium">
+                    <!-- Menu Continent -->
+                    <li class="relative group">
+                        <button class="flex items-center gap-2 hover:text-teal-300 transition duration-200">
+                            Continents
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-44 bg-gray-900 border border-gray-700 rounded-xl shadow-xl hidden group-hover:block">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Asie</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Amérique</a>
+                            <div class="border-t border-gray-700"></div>
+                            <a href="france.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Europe
+                                → France</a>
+                            <a href="angleterre.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Europe
+                                → Angleterre</a>
+                            <a href="portugal.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Europe
+                                → Portugal</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button class="flex items-center gap-2 hover:text-teal-300 transition duration-200">
+                            Personnes
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-2 w-44 bg-gray-900 border border-gray-700 rounded-xl shadow-xl hidden group-hover:block">
+                            <a href="france.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Mohamed
+                                → France</a>
+                            <a href="angleterre.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Janitou
+                                → Angleterre</a>
+                            <a href="portugal.html"
+                                class="block px-4 py-2 text-sm text-teal-400 hover:bg-gray-800 hover:text-teal-300">Claire
+                                → Portugal</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </a>
+    </header>
+    <main class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold mb-4">Le Portugal</h1>
 
-      <nav class="relative">
-        <ul class="flex gap-4 items-center">
-          <li class="relative group">
-            <button class="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center gap-2">
-              Continents
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <ul class="absolute right-0 mt-2 w-44 bg-[#071022] border border-gray-800 rounded shadow-lg hidden group-hover:block">
-              <li><a href="france.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">France</a></li>
-              <li><a href="angleterre.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Angleterre</a></li>
-              <li><a href="portugal.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Portugal</a></li>
-            </ul>
-          </li>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-2">Claire</h2>
+            <p class="text-gray-300">
+                Fado, côtes atlantiques, pastel de nata et villages colorés — Claire partage ici son amour pour le
+                Portugal, sa douceur de vivre et son histoire maritime.
+            </p>
+        </section>
 
-          <li class="relative group">
-            <button class="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center gap-2">
-              Personnes
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <ul class="absolute right-0 mt-2 w-56 bg-[#071022] border border-gray-800 rounded shadow-lg hidden group-hover:block">
-              <li><a href="france.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Mohamed — France</a></li>
-              <li><a href="angleterre.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Janitou — Angleterre</a></li>
-              <li><a href="portugal.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Claire — Portugal</a></li>
-            </ul>
-          </li>
+        <section class="grid lg:grid-cols-3 gap-6 mb-8">
+            <article class="col-span-2 bg-[#06121A] p-6 rounded">
+                <h3 class="font-semibold mb-3">Guide rapide</h3>
+                <p class="text-gray-300 mb-4">
+                    Le Portugal est idéal pour la Méditerranée douce, le surf et les villages historiques.
+                </p>
+                <ul class="list-disc list-inside text-gray-300 space-y-1">
+                    <li>Langue : Portugais</li>
+                    <li>Monnaie : Euro (€)</li>
+                    <li>Climat : Doux et ensoleillé</li>
+                </ul>
+            </article>
 
-          <li>
-            <a href="index.html#contact" class="px-3 py-2 rounded-md bg-gray-700 hover:bg-gray-600 text-sm">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="container mx-auto p-6">
-    <h1 class="text-4xl font-bold mb-4">Le Portugal</h1>
+            <aside class="bg-[#071022] p-6 rounded">
+                <p class="font-semibold mb-3">Infos pratiques</p>
+                <ul class="text-sm text-gray-300 space-y-2">
+                    <li>Langue : Portugais / Anglais courant</li>
+                    <li>Monnaie : Euro (€)</li>
+                    <li>Meilleure saison : Printemps / Début automne</li>
+                </ul>
+            </aside>
+        </section>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-2">Claire</h2>
-      <p class="text-gray-300">
-        Fado, côtes atlantiques, pastel de nata et villages colorés — Claire partage ici son amour pour le Portugal, sa douceur de vivre et son histoire maritime.
-      </p>
-    </section>
+        <section class="mb-8">
+            <h3 class="font-semibold mb-2">Réserver une activité</h3>
+            <form onsubmit="event.preventDefault(); alert('Réservation simulée');" class="space-y-3 max-w-lg">
+                <input type="text" class="w-full p-2 rounded bg-[#0b1220] border border-gray-800" placeholder="Nom :">
+                <input type="email" class="w-full p-2 rounded bg-[#0b1220] border border-gray-800"
+                    placeholder="Email :">
+                <button type="submit" class="w-full px-3 py-2 bg-teal-700 hover:bg-teal-600 rounded">Réserver</button>
+            </form>
+        </section>
 
-    <section class="grid lg:grid-cols-3 gap-6 mb-8">
-      <article class="col-span-2 bg-[#06121A] p-6 rounded">
-        <h3 class="font-semibold mb-3">Guide rapide</h3>
-        <p class="text-gray-300 mb-4">
-          Le Portugal est idéal pour la Méditerranée douce, le surf et les villages historiques.
-        </p>
-        <ul class="list-disc list-inside text-gray-300 space-y-1">
-          <li>Langue : Portugais</li>
-          <li>Monnaie : Euro (€)</li>
-          <li>Climat : Doux et ensoleillé</li>
-        </ul>
-      </article>
-
-      <aside class="bg-[#071022] p-6 rounded">
-        <p class="font-semibold mb-3">Infos pratiques</p>
-        <ul class="text-sm text-gray-300 space-y-2">
-          <li>Langue : Portugais / Anglais courant</li>
-          <li>Monnaie : Euro (€)</li>
-          <li>Meilleure saison : Printemps / Début automne</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="mb-8">
-      <h3 class="font-semibold mb-2">Réserver une activité</h3>
-      <form onsubmit="event.preventDefault(); alert('Réservation simulée');" class="space-y-3 max-w-lg">
-        <input type="text" class="w-full p-2 rounded bg-[#0b1220] border border-gray-800" placeholder="Nom :">
-        <input type="email" class="w-full p-2 rounded bg-[#0b1220] border border-gray-800" placeholder="Email :">
-        <button type="submit" class="w-full px-3 py-2 bg-teal-700 hover:bg-teal-600 rounded">Réserver</button>
-      </form>
-    </section>
-
-    <section class="mb-8 p-6 rounded bg-[#06121A]">
-      <h3 class="font-semibold mb-3">Calendrier de voyage</h3>
-      <table class="w-full text-sm">
-        <thead>
-          <tr class="text-gray-400 border-b border-gray-800">
-            <th class="py-2 text-left">Mois</th>
-            <th class="py-2 text-left">Activité</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="odd:bg-transparent even:bg-[#071022]">
-            <td class="py-2">Mai</td>
-            <td class="py-2">Surf et plages</td>
-          </tr>
-          <tr class="odd:bg-transparent even:bg-[#071022]">
-            <td class="py-2">Septembre</td>
-            <td class="py-2">Vinhos et fado</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
-  <footer class="bg-gray-800 mt-8 p-4 text-center text-sm text-gray-500">
-    <p>&copy; 2025 Découverte du Monde — Claire — Portugal</p>
-  </footer>
+        <section class="mb-8 p-6 rounded bg-[#06121A]">
+            <h3 class="font-semibold mb-3">Calendrier de voyage</h3>
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="text-gray-400 border-b border-gray-800">
+                        <th class="py-2 text-left">Mois</th>
+                        <th class="py-2 text-left">Activité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-transparent even:bg-[#071022]">
+                        <td class="py-2">Mai</td>
+                        <td class="py-2">Surf et plages</td>
+                    </tr>
+                    <tr class="odd:bg-transparent even:bg-[#071022]">
+                        <td class="py-2">Septembre</td>
+                        <td class="py-2">Vinhos et fado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="bg-gray-800 mt-8 p-4 text-center text-sm text-gray-500">
+        <p>&copy; 2025 Découverte du Monde — Claire — Portugal</p>
+    </footer>
 </body>
+
 </html>

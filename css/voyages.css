@@ -64,4 +64,22 @@ a:hover{
     box-shadow:0 4px 6px rgba(0,0,0,0.3);
 }
 
+select{
+    background-color:#0b1220;
+    color:#e5e7eb;
+    border:1px solid #374151;
+    border-radius:8px;
+    padding:0.5rem 0.75rem;
+    outline:none;
+    transition: background-color 0.2s ease ;
+}
 
+
+select:hover{
+    background-color: #1f2937;
+}
+
+option{
+    background-color:#0b1220;
+    color:#f3f4f6;
+}
