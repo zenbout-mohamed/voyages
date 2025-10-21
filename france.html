@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Découverte du Monde - France</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/voyages.css">
-    <link rel="stylesheet" href="./css/france.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Découverte du Monde - France</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/voyages.css">
+  <link rel="stylesheet" href="./css/france.css">
 </head>
+
 <body class="bg-gray-900 text-gray-100 font-sans">
-    <header class="bg-[#0b1220] border-b border-gray-800">
-        <section class ="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="index.html" class ="flex items-center gap-3">
-                <div class ="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justifu-center shadow">
-                    <span class ="font-semibold ">D</span>
-                </div>
-                <div>
-                    <p class ="font-bold text-lg">Découverte du Monde </p>
-                    <p class ="text-xs text-gray-400">Mohamed - France </p>
-                </div>
-            </a>
-            <nav class="relative">
-            <ul class="flex gap-4 items-center">
-                <li class="relative">
-                    <button id ="continentBtnF"href="#" class="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center">Continents</button>
-                    <svg class ="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke linecap="round" stroke-linejoint="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    <!-- <ul class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
-                        <li><a href="france.html" class="block px-4 py-2 hover:bg-gray-600">Europe</a></li>
-                    </ul> -->
-                </li>
+  <header class="bg-[#0b1220] border-b border-gray-800">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center shadow">
+          <span class="font-semibold">D</span>
+        </div>
+        <div>
+          <p class="font-bold text-lg">Découverte du Monde</p>
+          <p class="text-xs text-gray-400">Mohamed — France</p>
+        </div>
+      </a>
 
-                <li class="relative group">
-                    <a href="#" class="hover:text-blue-400">Par personne</a>
-                    <ul class="absolute hideen group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
-                        <li><a href="france.html" class="block px-4 py-2 hover:bg-gray-600">Janitou</a></li>
-                    </ul>
-                </li>
+      <nav class="relative">
+        <ul class="flex gap-4 items-center">
+          <li class="relative group">
+            <button class="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center gap-2">
+              Continents
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <ul class="absolute right-0 mt-2 w-44 bg-[#071022] border border-gray-800 rounded shadow-lg hidden group-hover:block">
+              <li><a href="france.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">France</a></li>
+              <li><a href="angleterre.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Angleterre</a></li>
+              <li><a href="portugal.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Portugal</a></li>
             </ul>
-        </nav>
+          </li>
 
+          <li class="relative group">
+            <button class="px-3 py-2 rounded-md hover:bg-gray-800 flex items-center gap-2">
+              Personnes
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <ul class="absolute right-0 mt-2 w-56 bg-[#071022] border border-gray-800 rounded shadow-lg hidden group-hover:block">
+              <li><a href="france.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Mohamed — France</a></li>
+              <li><a href="angleterre.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Janitou — Angleterre</a></li>
+              <li><a href="portugal.html" class="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800">Claire — Portugal</a></li>
+            </ul>
+          </li>
 
+          <li>
+            <a href="index.html#contact" class="px-3 py-2 rounded-md bg-gray-700 hover:bg-gray-600 text-sm">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        </section>
-        
-    </header>
-    <main class ="container mx-auto p-6">
-        <h1 class ="text-4xl font-bold mb-4 ">La France</h1>
+  <!-- Main -->
+  <main class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold mb-4">La France</h1>
 
-        <section class ="mb-8">
-            <h2 class ="text-2xl font-semibold mb-2">Janitou</h2>
-            <p class =""> Voici une représentation de Janitou et ses expériences de voyage en France...</p>
-        </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Mohamed</h2>
+      <p class="text-gray-300">Voici une présentation de Mohamed et ses expériences de voyage en France. Découvertes, recommandations et adresses préférées.</p>
+    </section>
 
-        <section class ="mb-8 overflow-x-auto">
-            <table class ="min-w-full bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <thead class ="bg-gray-700">
-                    <tr>
-                        <th class ="px-4 py-2">Ville</th>
-                        <th class ="px-4 py-2">Date</th>
-                        <th class ="px-4 py-2">Commentaire</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class ="border-b border-gray-600">
-                        <th class ="px-4 py-2">paris</th>
-                        <th class ="px-4 py-2">2024</th>
-                        <th class ="px-4 py-2">Incontournable!</th>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <section class="mb-8 overflow-x-auto">
+      <table class="min-w-full bg-gray-800 rounded-lg overflow-hidden text-sm">
+        <thead class="bg-gray-700">
+          <tr>
+            <th class="px-4 py-2 text-left">Ville</th>
+            <th class="px-4 py-2 text-left">Date</th>
+            <th class="px-4 py-2 text-left">Commentaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-600">
+            <td class="px-4 py-2">Paris</td>
+            <td class="px-4 py-2">2024</td>
+            <td class="px-4 py-2">Incontournable !</td>
+          </tr>
+          <!-- Ajoute d'autres lignes si besoin -->
+        </tbody>
+      </table>
+    </section>
 
-        <section>
-            <h2></h2>
-            <form action="">
-                <input type="text" class ="p-2 rounded bg-gray-700 text-gray-100" placeholder ="Entrez votre Nom : ">
-                <input type="email" class ="p-2 rounded bg-gray-700 text-gray-100" placeholder ="Entrez votre email : ">
-                <textarea class ="p-2 rounded bg-gray-700 text-gray-100" placeholder ="Message"></textarea>
-                <button type ="submit" class ="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Envoyer</button>
-            </form>
-        </section>
-
-       
-    </main>
-    <footer class ="bg-gray-800 mt-7 p-4 text-center">
-        <p>&copy; 2025-decouverte du Monde</p>
-    </footer>
-    
+    <section class="mb-8">
+      <form action="#" class="grid gap-4 max-w-xl" onsubmit="event.preventDefault(); alert('Merci — message simulé');">
+        <input type="text" class="p-2 rounded bg-gray-700 text-gray-100" placeholder="Entrez votre nom" required>
+        <input type="email" class="p-2 rounded bg-gray-700 text-gray-100" placeholder="Entrez votre email" required>
+        <textarea class="p-2 rounded bg-gray-700 text-gray-100" placeholder="Message" rows="4" required></textarea>
+        <button type="submit" class="inline-block px-4 py-2 bg-teal-600 hover:bg-teal-500 text-white rounded">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <footer class="bg-gray-800 mt-8 p-4 text-center text-sm text-gray-500">
+    <p>&copy; 2025 Découverte du Monde — Mohamed — France</p>
+  </footer>
 </body>
 </html>
